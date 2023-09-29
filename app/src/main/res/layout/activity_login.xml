@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a_appbackground"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="277dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a_bankimage" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="260dp"
+        android:fontFamily="@font/calibribold"
+        android:text="Login"
+        android:textColor="#040404"
+        android:textSize="33dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edittxtEmailIDLogin"
+        app:layout_constraintEnd_toStartOf="@+id/edittxtEmailIDLogin"
+        app:layout_constraintTop_toTopOf="@+id/edittxtEmailIDLogin"
+        app:srcCompat="@drawable/a_emailicon" />
+
+    <EditText
+        android:id="@+id/edittxtEmailIDLogin"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="@font/calibriregular"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textColor="#737373"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTxtPinLogin"
+        android:layout_width="337dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/calibriregular"
+        android:hint="Pin"
+        android:inputType="numberPassword"
+        android:textColor="#737373"
+        app:layout_constraintEnd_toEndOf="@+id/edittxtEmailIDLogin"
+        app:layout_constraintStart_toStartOf="@+id/edittxtEmailIDLogin"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtEmailIDLogin" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/editTxtPinLogin"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtPinLogin"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintStart_toStartOf="@+id/editTxtPinLogin"
+        app:layout_constraintTop_toTopOf="@+id/editTxtPinLogin"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/a_unseeicon" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTxtPinLogin"
+        app:layout_constraintEnd_toStartOf="@+id/editTxtPinLogin"
+        app:layout_constraintTop_toTopOf="@+id/editTxtPinLogin"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/a_lockicon" />
+
+    <TextView
+        android:id="@+id/tvForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:fontFamily="@font/calibribold"
+        android:text="Forgot password?"
+        android:textColor="#2196F3"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvForgotPass2"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtPinLogin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTxtPinLogin"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtPinLogin"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/calibribold"
+        android:text="Register"
+        android:textColor="#2196F3"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvForgotPass3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/tvForgotPass3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="377dp"
+        android:layout_height="62dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imbutLogin"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/imbutLogin"
+        app:layout_constraintTop_toBottomOf="@+id/tvForgotPass2"
+        app:layout_constraintVertical_bias="0.137"
+        app:srcCompat="@drawable/a_loginwithgooglebar" />
+
+    <TextView
+        android:id="@+id/tvForgotPass2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:fontFamily="@font/calibribold"
+        android:text="or"
+        android:textColor="#737373"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imbutLogin"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imbutLogin"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtPinLogin" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/calibribold"
+        android:text="Login with Google"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="31dp"
+        android:layout_height="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.548"
+        app:srcCompat="@drawable/a_googlelogo" />
+
+    <TextView
+        android:id="@+id/tvForgotPass3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/calibribold"
+        android:text="New to app?"
+        android:textColor="#737373"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvRegister"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <ImageButton
+        android:id="@+id/imbutLogin"
+        android:layout_width="404dp"
+        android:layout_height="88dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/a_loginbar"
+        app:layout_constraintBottom_toTopOf="@+id/tvForgotPass2"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtPinLogin"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/tvForgotPass"
+        app:layout_constraintVertical_bias="0.775" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
